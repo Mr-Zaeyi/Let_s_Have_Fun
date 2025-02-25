@@ -52,11 +52,6 @@ python video_processing.py --video path/to/video.mp4
 - **Obstacle Detection** – Compute **average distances** for **North, East, South, and West**.  
 - **Convex Hull Algorithm** – Find the **outer boundary** of detected obstacles.  
 
-#### 📡 Example Output (Lidar Obstacle Detection & Convex Hull)
-| Raw Lidar Points | Convex Hull Applied |
-|------------------|---------------------|
-| ![lidar_raw](example_images/lidar_raw.jpg) | ![lidar_hull](example_images/lidar_hull.jpg) |
-
 ---
 
 ## 🛠 Installation  
@@ -69,7 +64,7 @@ cd yourproject
 
 ### 2️⃣ Install Dependencies  
 ```sh
-pip install -m PyLidar3
+pip install -r requirements.txt
 ```
 
 ---
@@ -99,19 +94,6 @@ python lidar_processing.py
 ✅ Converts polar to Cartesian coordinates  
 ✅ Plots the scanned environment  
 ✅ Highlights detected obstacles  
-
----
-
-## 📂 File Structure  
-```
-📂 yourproject  
- ├── 📂 example_images         # Example outputs  
- ├── 📜 image_processing.py    # Image processing module  
- ├── 📜 video_processing.py    # Video processing module  
- ├── 📜 lidar_processing.py    # Lidar data handling  
- ├── 📜 requirements.txt       # Dependencies  
- ├── 📜 README.md              # Documentation  
-```
 
 ---
 
